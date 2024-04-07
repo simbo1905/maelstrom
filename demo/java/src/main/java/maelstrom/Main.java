@@ -1,11 +1,12 @@
 package maelstrom;
 
-import maelstrom.txnListAppend.TxnListAppendServer;
+
+import maelstrom.echo.EchoServer;
 
 public class Main {
   public static void main(String[] args) {
-    // new EchoServer().run();
+    new EchoServer().run();
     // new BroadcastServer().run();
-    new TxnListAppendServer().run();
+    //new TxnListAppendServer().run();
   }
 }
