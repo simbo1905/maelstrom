@@ -39,7 +39,7 @@ public class Node3 {
   // Our next message ID to generate
   public long nextMessageId = 0;
 
-  public ExecutorService executor = Executors.newCachedThreadPool();
+  public ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
 
   public Node3() {
   }
